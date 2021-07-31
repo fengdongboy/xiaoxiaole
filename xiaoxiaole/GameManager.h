@@ -22,6 +22,10 @@ public:
 	void print(void);
 	void check(int x, int y);
 
+	void checkData(void);
+
+	CellState getNeighbour(const Pos& pos, neighbour n, Pos& outPos);
+
 private:
 	int mCells[GAME_ROWS][GAME_CLOS];
 };
